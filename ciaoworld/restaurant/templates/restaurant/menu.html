@@ -5,22 +5,22 @@
 <h1>This is the menu</h1>
 <h2>Appetizers</h2>
 {% for item in appetizer %}
-    {{ item }}
+    {% include "restaurant/components/menu_item.html" %}
 {% endfor %}
 
 <h2>Soups and Salads</h2>
 {% for item in soup_or_salad %}
-    {{ item }}
+    {% include "restaurant/components/menu_item.html" %}
 {% endfor %}
 
 <h2>Main Dishes</h2>
 {% for item in main %}
-    {{ item }}
+    {% include "restaurant/components/menu_item.html" %}
 {% endfor %}
 
 <h2>Desserts</h2>
 {% for item in dessert %}
-    {{ item }}
+    {% include "restaurant/components/menu_item.html" %}
 {% endfor %}
 
 

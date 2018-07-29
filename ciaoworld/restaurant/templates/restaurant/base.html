@@ -9,7 +9,9 @@
     </head>
     <body>
         {% include 'restaurant/nav.html' %}
+        <div id='content-wrapper'>
         {% block content %}{% endblock %}
+        </div>
         {% block js %}
         <script src='{% static 'restaurant/js/index.js' %}'></script>
         {% endblock %}
