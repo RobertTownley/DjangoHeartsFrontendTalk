@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>Ciao World</title>
+{% block css %}
+<link rel='stylesheet' type='text/css' href='{% static 'restaurant/css/base.css' %}'/>
+{% endblock %}
+
+    </head>
+    <body>
+        {% include 'restaurant/nav.html' %}
+        {% block content %}{% endblock %}
+        {% block js %}
+        <script src='{% static 'restaurant/js/index.js' %}'></script>
+        {% endblock %}
+    </body>
+</html>
