@@ -5,14 +5,14 @@
 {% block css %}
 <link rel='stylesheet' type='text/css' href='{% static 'normalize.css/normalize.css' %}'/>
 <link rel='stylesheet' type='text/css' href='{% static 'bootstrap/dist/css/bootstrap.min.css' %}'/>
-<link rel='stylesheet' type='text/css' href='{% static 'restaurant/css/base.css' %}'/>
+<link rel='stylesheet' type='text/css' href='{% static 'restaurant/css/style.css' %}'/>
 {% endblock %}
 
     </head>
-    <body>
+    <body class='{{ page }}'>
         {% include 'restaurant/nav.html' %}
-        <div id='content-wrapper'>
-        {% block content %}{% endblock %}
+        <div id='wrapper'>
+            {% block content %}{% endblock %}
         </div>
         {% block js %}
         <script src='{% static 'restaurant/js/index.js' %}'></script>
