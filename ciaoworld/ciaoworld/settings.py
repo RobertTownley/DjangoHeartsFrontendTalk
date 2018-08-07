@@ -122,5 +122,8 @@ USE_TZ = True
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'MEDIAROOT')
 MEDIA_URL = '/media/'
+STATICFILES_DIRS = [
+    os.path.join(os.path.dirname(BASE_DIR), "node_modules"),
+]
 STATIC_ROOT = os.path.join(BASE_DIR, 'STATICROOT')
 STATIC_URL = '/static/'
