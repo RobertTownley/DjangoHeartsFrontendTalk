@@ -1,25 +1,53 @@
-nav { 
-    width: 100%;
-    background-color: black;
-    color: white;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    max-width: 100vw;
-    padding: 10px;
-}
-nav a {
-    color: inherit;
-    font-size: 36px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-img {
-    object-fit: cover;
-    max-width: 100vw;
-    width: 100%;
-}
-.menu-item-container {
-    max-width: 600px;
-}
+/*
+Error: Invalid CSS after "...a(0, 0, 0, 0.5)": expected expression (e.g. 1px, bold), was ";"
+        on line 2 of base.css
+
+1: body {
+2:     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+3:     overflow: hidden;
+4: }
+5: nav { 
+6:     width: 100%;
+7:     background-color: black;
+
+Backtrace:
+base.css:2
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:229:in `expected!'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:744:in `assert_done'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:76:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:240:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:1151:in `parse_script'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:721:in `parse_property'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:692:in `parse_property_or_rule'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:658:in `parse_line'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:536:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:545:in `block in build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:409:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:356:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...a(0, 0, 0, 0.5)\": expected expression (e.g. 1px, bold), was \";\"\A         on line 2 of base.css\A \A 1: body {\A 2:     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);\A 3:     overflow: hidden;\A 4: }\A 5: nav { \A 6:     width: 100%;\A 7:     background-color: black;"; }
