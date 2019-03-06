@@ -6,19 +6,18 @@
 3. [Structure](#structure)
 
 ## Introduction
-Until recently, I wrote frontend code like a backend developer. Javascript and jQuery were synonomous. CSS and JS
-dependencies were either linked from CDNs or downloaded and shoved into static asset directories. Sub-optimal
-architectural decisions, compromises, simplifications, and hacks found their way into my web applications as I worked
-around holes in my skill set. I tried to address these deficiencies by repeatedly smacking my head against React
-tutorials, but things took a long time to click.
+This is the starting point for our basic web application. It contains a Django project with a fairly standard structure.
 
-Looking back on this, I think it's because I was (correctly) reluctant to give up the entirety of my workflow as a
-backend developer. I'd spent years learning the Python web development ecosystem, and was looking for a more incremental
-approach to modernizing my frontend skills than just swapping out pip for npm.
-
-I designed this resource for a specific niche of people: Django developers looking to integrate a host of new and useful
-tools into their web applications. I've written it with a former version of myself in mind, but hope that others will
-find it useful.
+## Installation
+First, make a new project directory and create a virtual environment
+```bash
+mkdir -p ~/Projects/ciaoworld
+python3 -m venv venv
+```
+Next, pull down this project from GitHub
+```bash
+git clone 
+```
 
 ## Requirements
 To follow along, I'd recommend that you have moderate familiarity with Django projects.
