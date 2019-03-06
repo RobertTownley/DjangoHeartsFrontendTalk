@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h1>Ciao World</h1>
+<p>Ciao World is your area's premiere Italian restaurant. Whether you're looking for a romantic date night location, or
+a venue to host your large event, Ciao World is the place to be.</p>
+
+<div class='two-column'>
+  <div>
+    <h2>Our Story</h2>
+    <p>We opened our doors to customers on January 1st, 1970. Since then, we've become a fixture in the community, with
+    people coming from all around the world to sample our food.</p>
+    <p>Come by sometime soon and try our specials, or sample any one of the classic items off our <a href='{% url 'menu' %}'>world famous menu</a>.</p>
+  </div>
+  <img src='{% static 'images/ourStory.jpg' %}'/>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+nav {
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+p, h1, h2, h3, a {
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+nav a {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-image img {
+  object-fit: cover;
+  height: 60vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Homepage */
+.two-column {
+  display: flex;
+}
+.two-column div {
+  box-sizing: border-box;
+  padding-right: 8px;
+}
