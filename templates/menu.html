@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Menu</h1>
+{% for section in menu_sections %}
+  <div class='menu-section'>
+    <h2>{{ section.title }}</h2>
+    <div class='dishes'>
+      {% for dish in section.dishes %}
+        {% include 'menu/dish.html' %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
 {% endblock %}

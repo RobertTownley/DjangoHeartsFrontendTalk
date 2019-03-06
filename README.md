@@ -27,6 +27,14 @@ Upgrade pip and install the required pip dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+Run migrations to create your sqlite database
+```bash
+python manage.py migrate
+```
+Finally, install the provided data fixture so the menu has some content
+```bash
+python manage.py loaddata fixtures/data.json
+```
 
 ## Our Project
 Level 0 starts off as a fairly standard Django project. A few exceptions to this:

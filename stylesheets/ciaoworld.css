@@ -45,3 +45,22 @@ nav a {
   box-sizing: border-box;
   padding-right: 8px;
 }
+
+/* Menu */
+.menu-section h2 {
+  box-sizing: border-box;
+  font-size: 32px;
+  font-style: italic;
+  padding: 32px 8px 0px 8px;
+}
+.dishes {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+.dish {
+  box-sizing: border-box;
+  width: 33%;
+  padding: 8px;
+}
